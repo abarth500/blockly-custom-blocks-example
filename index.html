@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Blockly with WebSocket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/atom-one-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap.native/2.0.15/bootstrap-native-v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blockly_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/blocks_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/javascript_compressed.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/google/blockly@latest/msg/js/ja.js"></script>
+    <script src="average_block.js"></script>
+    <script src="average.js"></script>
+    <script src="workspace.js" defer></script>
+    <style>
+        #blocklyDiv {
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-8" id="blocklyDiv"></div>
+            <div class="col-4">
+                <button id="showCode" class="btn btn-success">JavaScriptを表示する</button>
+                <button id="execCode" class="btn btn-primary">実行する</button>
+                <pre><code class="JavaSciprt" id='jsCode'></code></pre>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
